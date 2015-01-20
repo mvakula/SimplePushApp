@@ -1,0 +1,9 @@
+{
+  "apn": {
+    "passphrase": "devdev",
+    "key": "private/apnDevKey.pem",
+    "cert": "private/apnDevCert.pem", 
+    "gateway": "gateway.sandbox.push.apple.com"
+  },
+  "production": false
+}
