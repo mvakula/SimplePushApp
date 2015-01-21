@@ -7,6 +7,9 @@
 meteor-platform
 autopublish
 insecure
-raix:push
 accounts-password
 accounts-ui
+meteorhacks:npm
+
+
+npm-container
