@@ -14,6 +14,17 @@ Meteor.startup(function() {
   function successHandler(result) {
     console.log('success result ' + result);
     // API call to store token on your DB
+    Meteor.call('savePushTokens', result, function(error, result) {
+    if (error) {
+      console.log("error when calling method")
+      console.log(error);
+    }
+    else {
+      console.log("Succesful method call")
+      console.log(result);
+    }
+    });
+    console.log(Tokens.find().fetch());
   }
 
   function errorHandler(error) {
