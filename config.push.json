@@ -5,9 +5,5 @@
     "cert": "apnDevCert.pem", 
     "gateway": "gateway.sandbox.push.apple.com"
   },
-  "production": false,
-  "badge": true,
-  "sound": true,
-  "alert": true,
-  "vibrate": true
+  "production": false
 }

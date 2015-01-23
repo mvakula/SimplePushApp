@@ -6,6 +6,7 @@ if (Meteor.isClient) {
     counter: function () {
       return Session.get("counter");
     }
+
   });
 
   Template.hello.events({
@@ -14,7 +15,14 @@ if (Meteor.isClient) {
       Session.set("counter", Session.get("counter") + 1);
     }
   });
+
+  Push.addListener('token', function(token) {
+    alert(JSON.stringify(token));
+  });
+
 }
+
+
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
